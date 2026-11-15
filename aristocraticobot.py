@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 
@@ -14,4 +15,4 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send("4L Hunter è online! 🚀")
 
-bot.run("INSERISCI_IL_TOKEN")
+bot.run(os.getenv("DISCORD_TOKEN"))
